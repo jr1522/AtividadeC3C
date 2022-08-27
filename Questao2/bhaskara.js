@@ -1,11 +1,14 @@
-function bhaskara(a,b,c){
-    delta = b**2 -4*a*c;
-    console.log(`Δ: ${delta}`);
-    if (delta < 0){
-        return "Para delta negativo, não existem raízes reais."
-    } else{    
-        x1 = (-b - Math.sqrt(delta)) / (2 * a);
-        x2 = (-b + Math.sqrt(delta)) / (2 * a) ;
-        return raizes = [x1, x2];
+function formulaBhaskara(ax, bx, c){
+    delta = Math.pow(bx, 2) - 4 * ax * c
+    if(delta < 0){
+        return 'Delta é negativo'
+    }else{
+        let x1, x2
+        x1 = (-bx + Math.sqrt(delta)) / (2 * ax)
+        x2 = (-bx - Math.sqrt(delta)) / (2 * ax)
+        return [x1, x2] 
     }
 }
+
+console.log(formulaBhaskara(2,12,-14))
+console.log(formulaBhaskara(1,-1,-6))
