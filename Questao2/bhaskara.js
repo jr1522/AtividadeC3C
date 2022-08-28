@@ -10,5 +10,3 @@ function formulaBhaskara(ax, bx, c){
     }
 }
 
-console.log(formulaBhaskara(2,12,-14))
-console.log(formulaBhaskara(1,-1,-6))
